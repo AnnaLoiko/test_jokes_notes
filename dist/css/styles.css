@@ -1,0 +1,56 @@
+.control-panel {
+	position: fixed;
+	z-index: 10;
+	left: 10px;
+	top: 10px;
+}
+
+.note {
+	width: 200px;
+	height: 200px;
+	background: #2b2b2b;
+	color: #fff;
+	padding: 10px;
+	position: relative;
+	border: 2px solid #2b2b2b;
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 1;
+	display: inline-block;
+	margin-right: 6px;
+}
+.note .number {
+	position: absolute;
+	font-size: 95px;
+	bottom: 15px;
+	right: 20px;
+	line-height: 1;
+	color: #fff;
+	opacity: .1;
+	-webkit-transition: .3s ease;
+	transition: .3s ease;
+}
+.note .content {
+	position: relative;
+	z-index: 2;
+}
+.note .overlay {
+	position: absolute;
+	background: rgba(0,0,0,.3);
+	padding: 5px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: right;
+}
+.note .overlay .btn {
+	margin-left: 5px;
+	font-size: inherit;
+}
+.note:hover .number {
+	opacity: 1;
+}
+
+.notes-list {
+	padding: 54px 10px 50px;
+}
